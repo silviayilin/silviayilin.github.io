@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://silviayilin.github.io/2021/12/14/Lazy-loading-%E5%BB%B6%E9%81%B2%E8%BC%89%E5%85%A5/Lazy-loading-延遲載入/4200GIF.gif">
 <meta property="og:image" content="https://silviayilin.github.io/2021/12/14/Lazy-loading-%E5%BB%B6%E9%81%B2%E8%BC%89%E5%85%A5/Lazy-loading-延遲載入/f12check.gif">
 <meta property="article:published_time" content="2021-12-14T08:54:22.000Z">
-<meta property="article:modified_time" content="2021-12-16T08:21:42.868Z">
+<meta property="article:modified_time" content="2021-12-16T08:25:47.196Z">
 <meta property="article:author" content="Yilin Sie">
 <meta property="article:tag" content="Angular">
 <meta name="twitter:card" content="summary">
@@ -194,7 +194,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2021-12-16 16:21:42" itemprop="dateModified" datetime="2021-12-16T16:21:42+08:00">2021-12-16</time>
+                <time title="修改時間：2021-12-16 16:25:47" itemprop="dateModified" datetime="2021-12-16T16:25:47+08:00">2021-12-16</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -229,8 +229,8 @@
 <figure class="highlight js"><figcaption><span>branch-routing.module.ts</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; NgModule &#125; <span class="keyword">from</span> <span class="string">&#x27;@angular/core&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; RouterModule, Routes &#125; <span class="keyword">from</span> <span class="string">&#x27;@angular/router&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; BranchComponent &#125; <span class="keyword">from</span> <span class="string">&#x27;./branch.component&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> routes: Routes = [&#123; <span class="attr">path</span>: <span class="string">&#x27;&#x27;</span>, <span class="attr">component</span>: BranchComponent &#125;];</span><br><span class="line"></span><br><span class="line">@NgModule(&#123;</span><br><span class="line">  <span class="attr">imports</span>: [RouterModule.forChild(routes)], <span class="comment">// forChild(routes)子路由附加到根路由</span></span><br><span class="line">  <span class="attr">exports</span>: [RouterModule]</span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">export</span> <span class="class"><span class="keyword">class</span> <span class="title">BranchRoutingModule</span> </span>&#123; &#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight html"><figcaption><span>app.component.html</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>&#123;&#123;title&#125;&#125;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">routerLink</span>=<span class="string">&quot;/branch&quot;</span>&gt;</span>Branch<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">routerLink</span>=<span class="string">&quot;&quot;</span>&gt;</span>Home<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">router-outlet</span>&gt;</span><span class="tag">&lt;/<span class="name">router-outlet</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <center><img src="Lazy-loading-延遲載入/4200GIF.gif" width = "" height = ""></center>
-使用 Chrome 開發者工具，將初始載入的資訊先清除<br>
-測試點擊 ```Branch``` 來確認一下branch module真的是延遲載入的。
+
+<p>使用 Chrome 開發者工具，將初始載入的資訊先清除<br><br>測試點擊 <code>Branch</code> 來確認一下branch module真的是延遲載入的。</p>
 <center><img src="Lazy-loading-延遲載入/f12check.gif" width = "" height = ""></center>
 
 
