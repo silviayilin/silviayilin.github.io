@@ -20,23 +20,23 @@
     var CONFIG = {"hostname":"silviayilin.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="前言目前工作是在銀行專案，初期尚未導入延遲載入，隨著開發的模組(NgModule)達到千單位，初始載入時間至少超過一分鐘， 團隊透過延遲載入结合路由配置，在需要時才動態加載相應模組以解決網站開啟太慢的問題。">
+  <meta name="description" content="個人膚淺的原因，選擇Playwright測試工具">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Lazy loading 延遲載入">
-<meta property="og:url" content="https://silviayilin.github.io/Angular/Lazy-loading-%E5%BB%B6%E9%81%B2%E8%BC%89%E5%85%A5/index.html">
+<meta property="og:title" content="初學Playwright">
+<meta property="og:url" content="https://silviayilin.github.io/uncategorized/%E5%88%9D%E5%AD%B8Playwright/index.html">
 <meta property="og:site_name" content="Yilin&#39;s Note">
-<meta property="og:description" content="前言目前工作是在銀行專案，初期尚未導入延遲載入，隨著開發的模組(NgModule)達到千單位，初始載入時間至少超過一分鐘， 團隊透過延遲載入结合路由配置，在需要時才動態加載相應模組以解決網站開啟太慢的問題。">
+<meta property="og:description" content="個人膚淺的原因，選擇Playwright測試工具">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://silviayilin.github.io/images/BranchTest.gif">
-<meta property="og:image" content="https://silviayilin.github.io/images/BranchCheck.gif">
-<meta property="article:published_time" content="2021-12-14T08:54:22.000Z">
-<meta property="article:modified_time" content="2021-12-16T10:10:12.618Z">
+<meta property="og:image" content="https://silviayilin.github.io/images/playwrightReason.png">
+<meta property="og:image" content="https://silviayilin.github.io/images/playwrightInstall.jpg">
+<meta property="article:published_time" content="2022-01-13T01:42:24.000Z">
+<meta property="article:modified_time" content="2022-01-13T08:53:06.956Z">
 <meta property="article:author" content="Yilin Sie">
-<meta property="article:tag" content="Angular">
+<meta property="article:tag" content="Playwright">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://silviayilin.github.io/images/BranchTest.gif">
+<meta name="twitter:image" content="https://silviayilin.github.io/images/playwrightReason.png">
 
-<link rel="canonical" href="https://silviayilin.github.io/Angular/Lazy-loading-%E5%BB%B6%E9%81%B2%E8%BC%89%E5%85%A5/">
+<link rel="canonical" href="https://silviayilin.github.io/uncategorized/%E5%88%9D%E5%AD%B8Playwright/">
 
 
 <script id="page-configurations">
@@ -49,7 +49,7 @@
   };
 </script>
 
-  <title>Lazy loading 延遲載入 | Yilin's Note</title>
+  <title>初學Playwright | Yilin's Note</title>
   
 
 
@@ -164,7 +164,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://silviayilin.github.io/Angular/Lazy-loading-%E5%BB%B6%E9%81%B2%E8%BC%89%E5%85%A5/">
+    <link itemprop="mainEntityOfPage" href="https://silviayilin.github.io/uncategorized/%E5%88%9D%E5%AD%B8Playwright/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -177,7 +177,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Lazy loading 延遲載入
+          初學Playwright
         </h1>
 
         <div class="post-meta">
@@ -186,17 +186,8 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2021-12-16 18:10:12" itemprop="dateModified" datetime="2021-12-16T18:10:12+08:00">2021-12-16</time>
+                <time title="修改時間：2022-01-13 16:53:06" itemprop="dateModified" datetime="2022-01-13T16:53:06+08:00">2022-01-13</time>
               </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分類於</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Angular/" itemprop="url" rel="index"><span itemprop="name">Angular</span></a>
-                </span>
-            </span>
 
           
 
@@ -209,20 +200,13 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h5 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h5><p>目前工作是在銀行專案，初期尚未導入延遲載入，<br>隨著開發的模組(NgModule)達到千單位，初始載入時間至少超過一分鐘，<br>
-團隊透過延遲載入结合路由配置，在需要時才動態加載相應模組以解決網站開啟太慢的問題。</p>
+        <p>個人膚淺的原因，選擇<a target="_blank" rel="noopener" href="https://playwright.dev/">Playwright</a>測試工具<br><img src="/images/playwrightReason.png" alt="Playwright1"></p>
 <span id="more"></span>
-
-<h5 id="實作"><a href="#實作" class="headerlink" title="實作"></a>實作</h5><p>建立專案</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ng new lazy-load-demo</span><br></pre></td></tr></table></figure>
-<p>建立branch延遲載入路由模組</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ng generate module branch --route=branch --module=app.module</span><br></pre></td></tr></table></figure>
-<p>宣告的路由 branch 會自動新增到以 <code>--module</code> 選項指定(app.module)的模組中宣告的 routes 陣列中。</p>
-<figure class="highlight js"><figcaption><span>app-routing.module.ts</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; NgModule &#125; <span class="keyword">from</span> <span class="string">&#x27;@angular/core&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; RouterModule, Routes &#125; <span class="keyword">from</span> <span class="string">&#x27;@angular/router&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> routes: Routes = [&#123; <span class="attr">path</span>: <span class="string">&#x27;branch&#x27;</span>, <span class="attr">loadChildren</span>: <span class="function">() =&gt;</span> <span class="keyword">import</span>(<span class="string">&#x27;./branch/branch.module&#x27;</span>).then(<span class="function"><span class="params">m</span> =&gt;</span> m.BranchModule) &#125;];</span><br><span class="line"></span><br><span class="line">@NgModule(&#123;</span><br><span class="line">  <span class="attr">imports</span>: [RouterModule.forRoot(routes)], <span class="comment">// forRoot(routes)全域性性的根路由</span></span><br><span class="line">  <span class="attr">exports</span>: [RouterModule]</span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">export</span> <span class="class"><span class="keyword">class</span> <span class="title">AppRoutingModule</span> </span>&#123; &#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><figcaption><span>branch-routing.module.ts</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; NgModule &#125; <span class="keyword">from</span> <span class="string">&#x27;@angular/core&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; RouterModule, Routes &#125; <span class="keyword">from</span> <span class="string">&#x27;@angular/router&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; BranchComponent &#125; <span class="keyword">from</span> <span class="string">&#x27;./branch.component&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> routes: Routes = [&#123; <span class="attr">path</span>: <span class="string">&#x27;&#x27;</span>, <span class="attr">component</span>: BranchComponent &#125;];</span><br><span class="line"></span><br><span class="line">@NgModule(&#123;</span><br><span class="line">  <span class="attr">imports</span>: [RouterModule.forChild(routes)], <span class="comment">// forChild(routes)子路由附加到根路由</span></span><br><span class="line">  <span class="attr">exports</span>: [RouterModule]</span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">export</span> <span class="class"><span class="keyword">class</span> <span class="title">BranchRoutingModule</span> </span>&#123; &#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight html"><figcaption><span>app.component.html</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>&#123;&#123;title&#125;&#125;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">routerLink</span>=<span class="string">&quot;/branch&quot;</span>&gt;</span>Branch<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">routerLink</span>=<span class="string">&quot;&quot;</span>&gt;</span>Home<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">router-outlet</span>&gt;</span><span class="tag">&lt;/<span class="name">router-outlet</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="/images/BranchTest.gif" alt="BranchTest"></p>
-<p>使用 Chrome 開發者工具，將初始載入的資訊先清除，測試點擊 <code>Branch</code> 來確認一下branch module真的是延遲載入的。<br><img src="/images/BranchCheck.gif" alt="BranchCheck"></p>
+<p>和官網一起操作紀錄</p>
+<h3 id="安裝"><a href="#安裝" class="headerlink" title="安裝"></a>安裝</h3><h6 id="安裝-Playwright-Test-Runner套件"><a href="#安裝-Playwright-Test-Runner套件" class="headerlink" title="安裝 Playwright Test Runner套件"></a>安裝 Playwright Test Runner套件</h6><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -D @playwright/test</span><br></pre></td></tr></table></figure>
+<h6 id="安裝瀏覽器-Chromium、Firefox、WebKit主流瀏覽器"><a href="#安裝瀏覽器-Chromium、Firefox、WebKit主流瀏覽器" class="headerlink" title="安裝瀏覽器(Chromium、Firefox、WebKit主流瀏覽器)"></a>安裝瀏覽器(Chromium、Firefox、WebKit主流瀏覽器)</h6><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx playwright install</span><br></pre></td></tr></table></figure>
+<p>也可以安裝自己選的瀏覽器，有關詳細說明，請參閱<a target="_blank" rel="noopener" href="https://playwright.dev/docs/browsers#installing-browsers">這裡</a><br>Windows 安裝在<code>%USERPROFILE%\AppData\Local\ms-playwright</code>路徑下<br><img src="/images/playwrightInstall.jpg" alt="Playwright2"></p>
+<h6 id="First-test"><a href="#First-test" class="headerlink" title="First test"></a>First test</h6><p>Source：<a target="_blank" rel="noopener" href="https://playwright.dev/">Playwright Official Site</a></p>
 
     </div>
 
@@ -232,7 +216,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Angular/" rel="tag"># Angular</a>
+              <a href="/tags/Playwright/" rel="tag"># Playwright</a>
           </div>
 
         
@@ -241,13 +225,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/Angular/SPA%EF%BC%88Single-Page-Application%EF%BC%89/" rel="prev" title="SPA（Single Page Application）">
-      <i class="fa fa-chevron-left"></i> SPA（Single Page Application）
+    <a href="/Angular/Form/" rel="prev" title="Form">
+      <i class="fa fa-chevron-left"></i> Form
     </a></div>
-      <div class="post-nav-item">
-    <a href="/Angular/Pipe/" rel="next" title="Pipe">
-      Pipe <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -306,7 +287,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%AF%A6%E4%BD%9C"><span class="nav-number">2.</span> <span class="nav-text">實作</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%9D"><span class="nav-number">1.</span> <span class="nav-text">安裝</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%AE%89%E8%A3%9D-Playwright-Test-Runner%E5%A5%97%E4%BB%B6"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">安裝 Playwright Test Runner套件</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%AE%89%E8%A3%9D%E7%80%8F%E8%A6%BD%E5%99%A8-Chromium%E3%80%81Firefox%E3%80%81WebKit%E4%B8%BB%E6%B5%81%E7%80%8F%E8%A6%BD%E5%99%A8"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">安裝瀏覽器(Chromium、Firefox、WebKit主流瀏覽器)</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#First-test"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">First test</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
